@@ -9,6 +9,6 @@ app.get("/", (req, res) => {
     res.send("hello world !!");
 });
 
-app.use("/api/v1/students", studentsRoutes);
+app.use("/api/v1/ruas", studentsRoutes);
 
 app.listen(port, () => console.log(`app listening on port ${port}`));
