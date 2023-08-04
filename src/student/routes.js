@@ -3,10 +3,10 @@ const controller = require('./controller');
 
 const router = Router();
 
-router.get("/", controller.getStudents);
-router.post("/", controller.addStudent);
-router.get("/:id", controller.getStudentsById);
-router.put("/:id", controller.updateStudent);
-router.delete("/:id", controller.removeStudent);
+router.get("/", controller.getRuass);
+router.post("/", controller.addRuas);
+router.get("/:id", controller.getRuassById);
+router.put("/:id", controller.updateRuas);
+router.delete("/:id", controller.removeRuas);
 
 module.exports = router;

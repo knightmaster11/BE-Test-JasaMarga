@@ -1,15 +1,15 @@
-const getStudents = "SELECT * FROM students";
-const getStudentsById = "SELECT * FROM students WHERE id = $1";
-const checkEmailExists = "SELECT s FROM students s WHERE s.email = $1";
-const addStudent = "INSERT INTO students (name, email, age, dob) VALUES ($1, $2, $3, $4)";
-const removeStudent = "DELETE FROM students WHERE id = $1";
-const updateStudent = "UPDATE students SET name = $1, email = $2, age = $3, dob = $4 WHERE id = $5";
+const getRuass = "SELECT * FROM ruas1";
+const getRuassById = "SELECT * FROM ruas1 WHERE id = $1";
+const checkRuasExists = "SELECT s FROM ruas1 s WHERE s.ruas = $1";
+const addRuas = "INSERT INTO ruas1 (ruas, km_Awal, km_akhir, status) VALUES ($1, $2, $3, $4)";
+const removeRuas = "DELETE FROM ruas1 WHERE id = $1";
+const updateRuas = "UPDATE ruas1 SET ruas = $1, km_Awal = $2, km_akhir = $3, status = $4 WHERE id = $5";
 
 module.exports = {
-    getStudents,
-    getStudentsById,
-    checkEmailExists,
-    addStudent,
-    removeStudent,
-    updateStudent,
+    getRuass,
+    getRuassById,
+    checkRuasExists,
+    addRuas,
+    removeRuas,
+    updateRuas,
 }
